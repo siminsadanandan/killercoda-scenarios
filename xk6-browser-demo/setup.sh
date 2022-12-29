@@ -22,3 +22,5 @@ echo "Installing xk6-browser extension..."
 
 echo "Installing chromium browser..."
 sudo apt install -y chromium-browser
+
+echo "** Completed setup task **"
