@@ -5,5 +5,4 @@
 Reference: <https://k6.io/docs/javascript-api/xk6-browser/get-started/installation/>
 
 
-*Wait for the presetup task to complete, you will see *Completed setup task* in the console screen*
-
+*Wait for the pre-setup task to complete, you will see __Completed setup task__ in the console screen*
