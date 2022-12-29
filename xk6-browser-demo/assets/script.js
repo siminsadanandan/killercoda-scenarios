@@ -3,7 +3,7 @@ import { check, sleep } from 'k6';
 
 export default function () {
   const browser = chromium.launch({ headless: true});
-  context=browser.newContext({screen: {width: 1920,height: 1080},viewport: {width: 1920,height: 1080},});
+  //context=browser.newContext({screen: {width: 1920,height: 1080},viewport: {width: 1920,height: 1080},});
   const page = browser.newPage();
 
   page
