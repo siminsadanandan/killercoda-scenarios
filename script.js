@@ -7,17 +7,17 @@ export default function () {
   const page = browser.newPage();
 
   page
-    .goto('https://portal-qa.connect.cloud.precisely.services/', { waitUntil: 'networkidle' })
+    .goto('https://test.k6.io/', { waitUntil: 'networkidle' })
     .then(() => {
       page.waitForLoadState('networkidle');
       //not working
       //page.waitForNavigation();
-      page.waitForNavigation({waitUntil: 'load'});
+      //page.waitForNavigation({waitUntil: 'load'});
       //sleep (10);
       //not working
       //page.waitForLoadState({ waitUntil: 'domcontentloaded' });
-      page.screenshot({ path: 'screenshot1.png' });
-      page.waitForSelector('#idp-discovery-username'); 
+      //page.screenshot({ path: 'screenshot1.png' });
+      //page.waitForSelector('#idp-discovery-username'); 
       page.screenshot({ path: 'screenshot2.png' });
     })
     .finally(() => {
