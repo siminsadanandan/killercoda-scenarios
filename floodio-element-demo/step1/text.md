@@ -21,11 +21,11 @@ _accept all the default value when prompted_
 
 Update/install all the dependencies, you have to move into the project folder you created in the above step __my-element-project__ to proceed.
 
-`cd my-element-project`{{exec}}
+`cd /root/my-element-project`{{exec}}
 
 Run the below command to update/install all the dependencies. 
 
-`cd my-element-project`{{exec}}
+`sudo npx playwright install-deps `{{exec}}
 
 
 ## Running sample script example1.perf.ts
