@@ -1,9 +1,10 @@
 
-# Run flood.io element sample load test
+# Run flood.io element load test demo
 
 <br>
 
 ###Initialization###
+
 All the steps detailed here under initialization needs to be executed only once per project space before you start running the tests.
 
 ##Step 1##
