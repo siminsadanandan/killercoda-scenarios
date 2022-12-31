@@ -1,0 +1,41 @@
+{
+	"title": "flood.io element demo",
+	"description": "Setup flood.io element and run a demo load test script",
+	"details": {
+		"intro": {
+			"text": "intro.md",
+			"foreground": "setup.sh"
+		},
+		"steps": [
+			{
+				"title": "Run the sample load test script",
+				"text": "step1/text.md"
+			}
+		],
+		"assets": {
+			"host01": [
+				{
+					"file": "example1.perf.ts",
+					"target": "/root/script",
+					"chmod": "+w"
+				},
+				{
+					"file": "example2.perf.ts",
+					"target": "/root/script",
+					"chmod": "+w"
+				},
+				{
+					"file": "users.csv",
+					"target": "/root/script",
+					"chmod": "+w"
+				}                        
+			]
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"backend": {
+		"imageid": "ubuntu"
+	}
+}
