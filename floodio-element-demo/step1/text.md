@@ -3,11 +3,11 @@
 
 <br>
 
-###Initialization###
+### Initialization
 
 All the steps detailed here under initialization needs to be executed only once per project space before you start running the tests.
 
-##Step 1##
+## Step 1
 
 In the step below you will see a project with name my-element-project is initialized. 
 
