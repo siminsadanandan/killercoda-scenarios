@@ -2,17 +2,23 @@
 
 <br>
 
-This setup is based on flood.io 2.x. For details on the installation refer the link below -
+This setup is based on flood.io 2.x. For details on the installation refer the link
 Reference: <https://element.flood.io/docs/start/install>
 
-The playground need to be installed with the the required dependencies like nodejs before  flood.io element can be installed. As past of the playground initialization _setup.sh_ is executed which installs nodejs v14.21.1.
+The playground need to be installed with the required dependencies like nodejs before  flood.io element can be installed. As part of the playground initialization _setup.sh_ script is executed which installs required nodejs version.
 
-After installing the nodejs you can install the flood.io element npm module with the below command
+After the auto initialization script execution is complete you can install the flood.io element npm module with the below command
 
 `sudo npm -g install element-cli`{{exec}}
 
-All the scripts referenced in this playground are available in /root/script folder. 
+- sample scripts under /root/script
+- test result including screenshots are under /root/script/tmp
 
-To run your own script, create the testdef eg. my-first-script.pef.ts file under /root/script folder and execute the command __sudo element run --mu /root/script/my-first-script.pef.ts__
+To run your own script, create a testdef eg. my-first-script.pef.ts file under /root/script folder and execute the command __sudo element run --mu /root/script/my-first-script.pef.ts__
 
-*You have to wait for the setup task to complete, you will see __Completed setup task__ in the console screen*
+
+__dependencies__
+
+Deployed on Linux ubuntu 5.4.0-131-generic
+- nodejs - v14.21.1
+- flood.io elements cli - v2.0.4

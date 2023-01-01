@@ -1,6 +1,6 @@
 {
 	"title": "flood.io element demo",
-	"description": "Setup flood.io element and run a demo load test script",
+	"description": "Setup flood.io element load generator and run demo load test script",
 	"details": {
 		"intro": {
 			"text": "intro.md",
@@ -8,7 +8,7 @@
 		},
 		"steps": [
 			{
-				"title": "Run the sample load test script",
+				"title": "Run load test demo scripts",
 				"text": "step1/text.md"
 			}
 		],
