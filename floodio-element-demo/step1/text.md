@@ -14,12 +14,12 @@ In the step below you will see a project with name __my-element-project__ gettin
 
 `element init my-element-project`{{exec}}
 
-_accept all the default value when prompted_
+_*Accept all the default value when prompted_
 
 
 ### Step 2
 
-Update/install all the dependencies, you have to move into the project folder you created in the above step __my-element-project__ to proceed.
+To update/install all the dependencies, you have to move into the project folder you created in the above step __my-element-project__ to proceed.
 
 `cd /root/my-element-project`{{exec}}
 

@@ -29,7 +29,8 @@ interface UserData {
 //const globalBrowserID = ENV.FLOOD_GRID_INDEX + '_' + ENV.FLOOD_GRID_NODE_SEQUENCE_ID + '_' + ENV.BROWSER_ID.toString()
 //TestData.fromCSV<UserData>('users.csv').filter((line, index, browserID) => line.id === globalBrowserID)
 TestData.fromCSV<UserData>("users.csv").shuffle().circular()
-//console.log(UserData.username);
+//TestData.fromCSV<UserData>("users.csv").shuffle(false).circular()
+//TestData.fromCSV<UserData>("users.csv").peek()
 
 export default () => {
 	beforeAll(async browser => {
@@ -53,8 +54,9 @@ export default () => {
 	   await browser.wait(Until.elementIsEnabled(By.id('idp-discovery-username')))
 
 	   await browser.type(By.id('idp-discovery-username'), data.username)
-	   //await browser.type(By.id('idp-discovery-username'), 'petnt103-designer1@precisely.testinator.com')
-	   
+
+	   //console.log(data.username);
+
 	})
 
 	step('Navigate to password page', async (browser: Browser, data: UserData) => {
