@@ -26,10 +26,10 @@ interface UserData {
   password: string
 }
 
-const url = 'https://portal-qa.connect.cloud.precisely.services/'
-const ssoUrl = 'https://sso.precisely.services/'
+const url = ''
+const ssoUrl = ''
 
-const globalBrowserID = ENV.FLOOD_GRID_INDEX + '_' + ENV.FLOOD_GRID_NODE_SEQUENCE_ID + '_' + ENV.BROWSER_ID.toString()
+//const globalBrowserID = ENV.FLOOD_GRID_INDEX + '_' + ENV.FLOOD_GRID_NODE_SEQUENCE_ID + '_' + ENV.BROWSER_ID.toString()
 
 //TestData.fromCSV<UserData>('users.csv').filter((line, index, browserID) => line.id === globalBrowserID)
 TestData.fromCSV<UserData>("users.csv").shuffle().circular()
@@ -67,7 +67,8 @@ export default () => {
 	step('Login', async (browser: Browser, data: UserData) => {
 	   await browser.type(By.id('okta-signin-password'), data.password)
 	   await browser.click(By.id('okta-signin-submit'))
-	   await browser.wait(Until.urlIs(`${url}data-integration/home/pipeline`))
+	   //await browser.wait(Until.urlIs(`${url}data-integration/home/pipeline`))
+	   await browser.wait(Until.urlIs(`${url}data-integration/pipelines`))
 	})
 	
 	step('Logout', async (browser: Browser) => {
