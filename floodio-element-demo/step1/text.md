@@ -35,14 +35,16 @@ Actual script is shared from flood.io playground samples.
 Reference: <https://github.com/flood-io/load-testing-playground/blob/master/element/youtube/example.ts>
 
 
-`cd my-element-project && sudo element run --mu /root/script/example1.perf.ts`{{exec}}
+`cd /root/my-element-project && sudo element run --mu /root/script/example1.perf.ts`{{exec}}
 
 
 ## Running sample script example2.perf.ts
 
-For this script to work you may need to update the correct URL and authentication credentials in the datafile users.csv file under /root/script folder.
+For this script to work you may need to update the correct URL and authentication credentials in the datafile.
+- update username/password in datafile /root/script/users.csv
+- update application launch url and sso url variables in /root/script/example2.perf.ts file
 
 Now run the testdef example2.perf.ts
 
-`cd my-element-project && sudo element run --mu /root/script/example2.perf.ts`{{exec}}
+`cd /root/my-element-project && sudo element run --mu /root/script/example2.perf.ts`{{exec}}
 
