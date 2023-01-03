@@ -6,7 +6,7 @@ export default function () {
   //context=browser.newContext({screen: {width: 1920,height: 1080},viewport: {width: 1920,height: 1080},});
   const page = browser.newPage();
    page
-   .goto('https://portal-qa.connect.cloud.precisely.services/', { waitUntil: 'networkidle' })
+   .goto('https://REPLACE_URL_HERE', { waitUntil: 'networkidle' })
      .then(() => {
        page.waitForLoadState('networkidle', {timeout:30000});
        //not working
@@ -19,7 +19,7 @@ export default function () {
        page.waitForSelector('#idp-discovery-username',{state:'attached'});
        page.waitForSelector('#idp-discovery-username',{state:'visible'});
        //check(page, { enabled: (p) => p.$('#idp-discovery-username').isEnabled(), });
-       page.$('#idp-discovery-username').type('petnt103-designer1@precisely.testinator.com');
+       page.$('#idp-discovery-username').type('REPLACE_USER_HERE');
        page.screenshot({ path: 'screenshot2.png' });
        page.waitForSelector('#idp-discovery-submit',{state:'attached'});
        page.waitForSelector('#idp-discovery-submit',{state:'visible'});
@@ -29,7 +29,7 @@ export default function () {
        page.$('#okta-signin-password', {state:'attached'});
        page.waitForSelector('#okta-signin-password',{state:'visible'});
        page.screenshot({ path: 'screenshot4.png' });
-       page.$('#okta-signin-password').type('Password@1234');
+       page.$('#okta-signin-password').type('REPLACE_PASSWORD_HERE');
        page.screenshot({ path: 'screenshot5.png' });
        page.waitForLoadState('networkidle');
        //page.waitForSelector('#okta-signin-submit',{state:'attached'});
