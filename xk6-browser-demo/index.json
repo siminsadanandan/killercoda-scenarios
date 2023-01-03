@@ -15,10 +15,15 @@
 		"assets": {
 			"host01": [
 				{
-					"file": "script.js",
+					"file": "example1.js",
 					"target": "/root/go/bin",
 					"chmod": "+w"
-				}
+				},
+				{
+					"file": "example2.js",
+					"target": "/root/go/bin",
+					"chmod": "+w"
+				}				
 			]
 		},
 		"finish": {
