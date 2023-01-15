@@ -13,4 +13,4 @@ Start up the flood.io agent and connect to the grid named __my-flood-grid__. Log
 
 `~/flood-agent/flood-agent --grid my-flood-grid`{{exec}}
 
-After the agents are registered to the grid you can run the test from the flood.io UI. The actual test execution happens in the machine where the agent is installed and the test results are pushed to the flood.io cloud, you can check all the test execution stats from the flood.io dashboard __https://app.flood.io/projects__.
+After the agents are registered to the grid you can run the test from the flood.io UI. The actual test execution happens in the machine where the agent is installed and the test results are pushed to the flood.io cloud, you can check all the test execution stats from the flood.io dashboard <https://app.flood.io/projects>
