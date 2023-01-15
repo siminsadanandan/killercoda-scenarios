@@ -1,0 +1,25 @@
+{
+	"title": "flood.io local load generator hybrid depoyment demo",
+	"description": "Setup flood.io local load generator and run demo flood element load test script",
+	"details": {
+		"intro": {
+			"text": "intro.md",
+			"foreground": "setup.sh"
+		},
+		"assets": {
+			"host01": [
+				{
+					"file": "config.yaml",
+					"target": "/root",
+					"chmod": "+w"
+				}                        
+			]
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"backend": {
+		"imageid": "ubuntu"
+	}
+}
