@@ -1,6 +1,7 @@
 {
   "items": [
     { "path": "xk6-browser-demo","title": "xk6 browser load generator demo" },
-    { "path": "floodio-element-demo","title": "flood.io element load generator demo" }
+    { "path": "floodio-element-demo","title": "flood.io element load generator demo" },
+    { "path": "floodio-element-local-lg-demo","title": "flood.io local agent/grid load generator demo" }
   ]
 }
