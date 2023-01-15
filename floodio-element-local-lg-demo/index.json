@@ -10,7 +10,7 @@
 			"host01": [
 				{
 					"file": "config.yaml",
-					"target": "/root",
+					"target": "/root/.config/flood-grid",
 					"chmod": "+w"
 				}                        
 			]
